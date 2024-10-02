@@ -7,10 +7,11 @@
 // 2. Vendors
 
 // 3. Base stuff
-@import 'base/base', 'base/typography', 'base/helpers', 'base/normalize';
+@import 'base/global', 'base/typography', 'base/helpers', 'base/normalize',
+  'base/links', 'base/text', 'base/buttons';
 
 // 4. Layout-related sections
-@import 'layouts/header', 'layouts/footer';
+@import 'layouts/header', 'layouts/footer', 'layouts/pageLayout';
 
 // 5. Components
 @import 'components/button';
