@@ -5,3 +5,11 @@
   @warn "Unknown `#{$key}` in $colors.";
   @return null;
 }
+
+@function fontSize($key) {
+  @if map-has-key($font-sizes, $key) {
+    @return map-get($font-sizes, $key);
+  }
+  @warn "Unknown `#{$key}` in $font-sizes.";
+  @return null;
+}
