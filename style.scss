@@ -1,24 +1,24 @@
 @charset "UTF-8";
 
-// ****** 1. Configuration and helpers
-@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins',
-  'abstracts/placeholders';
-
 // ****** 2. Vendors
+@use 'vendors/sg-library';
 
 // ****** 3. Base stuff
-@import 'base/global', 'base/typography', 'base/helpers', 'base/normalize',
-  'base/links', 'base/text', 'base/buttons';
+@use 'base/global';
+@use 'base/typography';
+@use 'base/helpers';
+@use 'base/normalize';
 
 // ****** 4. Layouts
-@import 'layouts/header', 'layouts/footer';
+@use 'layouts/header';
+@use 'layouts/footer';
 // Layouts / templates
-@import 'layouts/templates/pageLayout';
+@use 'layouts/templates/pageLayout';
 
 // ****** 5. Components
-@import 'components/button';
+@use 'components/menu';
 
 // ****** 6. Pages
-@import 'pages/home';
+@use 'pages/home';
 
 // ****** 7. Themes
